@@ -54,7 +54,7 @@ function python3_package_install {
 }
 
 function python3_package_install_numpy {
-    install_cmd="-m pip install --target ${OUTPUT_DIR}${INSTALL_PREFIX}/lib/python3.8/site-packages --no-cache-dir --disable-pip-version-check $1"
+    install_cmd="-m pip install --target ${OUTPUT_DIR}${INSTALL_PREFIX}/lib/python3.8/site-packages --no-cache-dir --disable-pip-version-check . $1"
     if [ ${ARCH} == 'linux-arm' ]; then
         _PYTHON_HOST_PLATFORM=linux-arm  _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata__linux_arm-linux-gnueabihf python3.8 ${install_cmd}
     elif [ ${ARCH} == 'linux-arm64' ]; then
