@@ -153,7 +153,7 @@ Target(
 SourceLocation(
 	name = 'openocd',
 	vcs = 'git',
-	location = 'https://repo.or.cz/openocd.git',
+	location = 'https://github.com/openocd-org/openocd.git',
 	revision = 'origin/master',
 	license_file = 'COPYING',
 )
