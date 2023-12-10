@@ -29,6 +29,7 @@ RUN set -e -x ;\
         qtbase5-dev-tools \
         libtool \
         llvm; \
+        pandoc; \
     apt -y autoremove ;\
     rm -rf /var/lib/apt/lists/*
 
